@@ -45,23 +45,15 @@ public struct Swifixture {
         let data = try FixtureLoader.data(fromfile: self.filename)
         return JSON(data: data!)
     }
+    
+    public func toString() throws -> String?{
+        let data = try FixtureLoader.data(fromfile: self.filename)
+        return JSON(data: data!).rawString()
+    }
+    
     public func mapTo<T:Mappable>(type:T.Type) throws -> T?{
-        let json = try self.toSwiftyJSON()
-        let jsonString = json!.rawString()
+        let jsonString = try self.toString()
         let result = Mapper<T>().map(jsonString!)
         return result
     }
 }
-
-//extension String{
-//    public func toSwiftyJSON() throws -> JSON?{
-//        let data = try FixtureLoader.data(fromfile: self)
-//        return JSON(data: data!)
-//    }
-//    public func mapTo<T:Mappable>(type:T.Type) throws -> T?{
-//         let json = try self.toSwiftyJSON()
-//         let jsonString = json!.rawString()
-//         let result = Mapper<T>().map(jsonString!)
-//         return result
-//    }
-//}

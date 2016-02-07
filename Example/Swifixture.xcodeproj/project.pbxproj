@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2089808A1C675FBE004AD94D /* jsonfile.json in Resources */ = {isa = PBXBuildFile; fileRef = 208980891C675FBE004AD94D /* jsonfile.json */; };
+		20A2C2051C67AC58006CDC59 /* simple.json in Resources */ = {isa = PBXBuildFile; fileRef = 20A2C2041C67AC58006CDC59 /* simple.json */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		1313FFDAEA79797BF6C77B3F /* Pods_Swifixture_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifixture_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		208980891C675FBE004AD94D /* jsonfile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonfile.json; sourceTree = "<group>"; };
+		20A2C2041C67AC58006CDC59 /* simple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = simple.json; sourceTree = "<group>"; };
 		2193F909DB1C340D76C06E28 /* Swifixture.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Swifixture.podspec; path = ../Swifixture.podspec; sourceTree = "<group>"; };
 		320DA6299B5A664D46E0CB3E /* Pods-Swifixture_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifixture_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swifixture_Tests/Pods-Swifixture_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		43AE33C0F4B22295F7E6A4E9 /* Pods-Swifixture_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifixture_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swifixture_Tests/Pods-Swifixture_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				208980891C675FBE004AD94D /* jsonfile.json */,
+				20A2C2041C67AC58006CDC59 /* simple.json */,
 			);
 			name = fixtures;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				2089808A1C675FBE004AD94D /* jsonfile.json in Resources */,
+				20A2C2051C67AC58006CDC59 /* simple.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

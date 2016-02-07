@@ -34,10 +34,19 @@ class TableOfContentsSpec: QuickSpec {
                 expect(object!.prop2) == "second prop"
             }
             
+            it("should be able to load json string") {
+                let string = try! Swifixture("simple").toString()
+                expect(string).toNot(beNil())
+                
+            }
+            
+
+        }
+        
+        describe("these will fail") {
             it("should fail if invalid json name is given") {
                 expect{try Swifixture("invalid").toSwiftyJSON()}.to(throwError())
             }
-
         }
     }
 }
