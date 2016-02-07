@@ -4,7 +4,7 @@ language: objective-c
 # - gem install slather --no-rdoc --no-ri --no-document --quiet
 # - cd Example && pod install
 script:
-- xctool test -workspace Swifixture.xcworkspace -scheme Swifixture-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+- xctool test -workspace Example/Swifixture.xcworkspace -scheme Swifixture-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
 after_success:
 - bash <(curl -s https://codecov.io/bash)
 
