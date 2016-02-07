@@ -1,12 +1,12 @@
 language: objective-c
-before_install:
-- gem install cocoapods-coverage --no-rdoc --no-ri --no-document --quiet
+# before_install:
+# - gem install cocoapods-coverage --no-rdoc --no-ri --no-document --quiet
 # - gem install slather --no-rdoc --no-ri --no-document --quiet
 # - cd Example && pod install
 script:
 - xctool test -workspace Example/Swifixture.xcworkspace -scheme Swifixture-Example -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
 after_success:
-- pod lib coverage
+# - pod lib coverage
 - bash <(curl -s https://codecov.io/bash)
 
 
