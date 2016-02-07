@@ -1,6 +1,6 @@
 # Swifixture
 
-[![CI Status](http://img.shields.io/travis/Thiago Lioy/Swifixture.svg?style=flat)](https://travis-ci.org/Thiago Lioy/Swifixture)
+[![CI Status](http://img.shields.io/travis/thiagolioy/Swifixture.svg?style=flat)](https://travis-ci.org/thiagolioy/Swifixture)
 [![Version](https://img.shields.io/cocoapods/v/Swifixture.svg?style=flat)](http://cocoapods.org/pods/Swifixture)
 [![License](https://img.shields.io/cocoapods/l/Swifixture.svg?style=flat)](http://cocoapods.org/pods/Swifixture)
 [![Platform](https://img.shields.io/cocoapods/p/Swifixture.svg?style=flat)](http://cocoapods.org/pods/Swifixture)
