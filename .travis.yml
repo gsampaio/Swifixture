@@ -1,9 +1,17 @@
 language: objective-c
-before_install:
-- gem install cocoapods --no-rdoc --no-ri --no-document --quiet
-- gem install slather --no-rdoc --no-ri --no-document --quiet
-- cd Example && pod install
+# before_install:
+# - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+# - gem install slather --no-rdoc --no-ri --no-document --quiet
+# - cd Example && pod install
 script:
 - xctool test -workspace Swifixture.xcworkspace -scheme Swifixture-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
 after_success:
-- cd $TRAVIS_BUILD_DIR && slather
+- bash <(curl -s https://codecov.io/bash)
+
+
+# language: objective-c
+# script:
+#   - xctool -project {{path_to_xcodeproj}} -scheme {{your_testing_scheme}} \
+# build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+# after_success:
+# - bash <(curl -s https://codecov.io/bash)
