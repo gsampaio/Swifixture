@@ -1,0 +1,7 @@
+coverage_service: cobertura_xml
+xcodeproj: Example/Swifixture.xcodeproj
+source_directory:  Pod/Classes
+output_directory: xml_report
+ignore:
+  - Example/Swifixture/*
+  
