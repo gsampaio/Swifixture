@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'ED3C780E594851C993D673A2'
+               BlueprintIdentifier = '0367C6B55B81F2C1E1B48413'
                BlueprintName = 'Swifixture'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Swifixture.framework'>

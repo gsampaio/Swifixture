@@ -1,8 +1,8 @@
 {
   "name": "Swifixture",
   "version": "0.1.0",
-  "summary": "Swift library to load Json files and help to test better.",
-  "description": "",
+  "summary": "Swift library to load Json fixtures.",
+  "description": "Swift library to load Json fixtures. Swift version of my other library to load json\nwritten in objective-c. https://github.com/thiagolioy/TLJsonFactory",
   "homepage": "https://github.com/thiagolioy/Swifixture",
   "license": "MIT",
   "authors": {

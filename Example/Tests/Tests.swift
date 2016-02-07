@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-@testable import Swifixture
+import Swifixture
 import ObjectMapper
 
 struct FixtureObjectMapper: Mappable {

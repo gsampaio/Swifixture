@@ -37,7 +37,7 @@ struct FixtureLoader {
 public struct Swifixture {
     let filename: String
     
-    init(_ name:String){
+    public init(_ name:String){
         filename = name
     }
     
