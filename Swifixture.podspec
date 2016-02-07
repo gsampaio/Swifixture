@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
-  Swift library to load Json fixtures.
+  Swift library to load Json fixtures. Swift version of my other library to load json
+  written in objective-c. https://github.com/thiagolioy/TLJsonFactory
                        DESC
 
   s.homepage         = "https://github.com/thiagolioy/Swifixture"
