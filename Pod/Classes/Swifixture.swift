@@ -14,21 +14,28 @@ public enum SwifixtureError: ErrorType{
     case InvalidPath
     case ParseError
 }
-
-extension String{
-    public func loadJSON() throws -> JSON?{
+struct FixtureLoader {
+    
+    static func data(fromfile file:String) throws -> NSData?{
         let bundle = NSBundle.mainBundle()
         
-        guard let path = bundle.pathForResource(self, ofType: "json") else{
+        guard let path = bundle.pathForResource(file, ofType: "json") else{
             throw SwifixtureError.InvalidPath
         }
         
         let pathUrl = NSURL(fileURLWithPath: path)
         do{
-            let data = try NSData(contentsOfURL: pathUrl, options: NSDataReadingOptions.DataReadingMappedIfSafe)
-            return JSON(data: data)
+            return try NSData(contentsOfURL: pathUrl, options: NSDataReadingOptions.DataReadingMappedIfSafe)
         }catch {
             throw SwifixtureError.ParseError
         }
+    }
+    
+}
+
+extension String{
+    public func loadJSON() throws -> JSON?{
+        let data = try FixtureLoader.data(fromfile: self)
+        return JSON(data: data!)
     }
 }
