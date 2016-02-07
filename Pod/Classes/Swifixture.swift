@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import ObjectMapper
 
 
 public enum SwifixtureError: ErrorType{
@@ -33,9 +34,34 @@ struct FixtureLoader {
     
 }
 
-extension String{
-    public func loadJSON() throws -> JSON?{
-        let data = try FixtureLoader.data(fromfile: self)
+public struct Swifixture {
+    let filename: String
+    
+    init(_ name:String){
+        filename = name
+    }
+    
+    public func toSwiftyJSON() throws -> JSON?{
+        let data = try FixtureLoader.data(fromfile: self.filename)
         return JSON(data: data!)
     }
+    public func mapTo<T:Mappable>(type:T.Type) throws -> T?{
+        let json = try self.toSwiftyJSON()
+        let jsonString = json!.rawString()
+        let result = Mapper<T>().map(jsonString!)
+        return result
+    }
 }
+
+//extension String{
+//    public func toSwiftyJSON() throws -> JSON?{
+//        let data = try FixtureLoader.data(fromfile: self)
+//        return JSON(data: data!)
+//    }
+//    public func mapTo<T:Mappable>(type:T.Type) throws -> T?{
+//         let json = try self.toSwiftyJSON()
+//         let jsonString = json!.rawString()
+//         let result = Mapper<T>().map(jsonString!)
+//         return result
+//    }
+//}

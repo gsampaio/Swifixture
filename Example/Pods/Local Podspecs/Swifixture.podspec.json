@@ -12,6 +12,7 @@
     "git": "https://github.com/thiagolioy/Swifixture.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/tplioy",
   "platforms": {
     "ios": "8.0"
   },
@@ -24,6 +25,9 @@
   },
   "dependencies": {
     "SwiftyJSON": [
+
+    ],
+    "ObjectMapper": [
 
     ]
   }

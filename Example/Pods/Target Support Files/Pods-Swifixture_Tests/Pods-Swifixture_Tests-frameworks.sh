@@ -84,12 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Swifixture_Tests/ObjectMapper.framework"
   install_framework "Pods-Swifixture_Tests/Swifixture.framework"
   install_framework "Pods-Swifixture_Tests/SwiftyJSON.framework"
   install_framework "Pods-Swifixture_Tests/Nimble.framework"
   install_framework "Pods-Swifixture_Tests/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Swifixture_Tests/ObjectMapper.framework"
   install_framework "Pods-Swifixture_Tests/Swifixture.framework"
   install_framework "Pods-Swifixture_Tests/SwiftyJSON.framework"
   install_framework "Pods-Swifixture_Tests/Nimble.framework"
