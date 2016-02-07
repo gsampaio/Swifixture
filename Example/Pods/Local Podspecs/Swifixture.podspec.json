@@ -1,0 +1,30 @@
+{
+  "name": "Swifixture",
+  "version": "0.1.0",
+  "summary": "Swift library to load Json files and help to test better.",
+  "description": "",
+  "homepage": "https://github.com/thiagolioy/Swifixture",
+  "license": "MIT",
+  "authors": {
+    "Thiago Lioy": "thiagolioy@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/thiagolioy/Swifixture.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Swifixture": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "SwiftyJSON": [
+
+    ]
+  }
+}

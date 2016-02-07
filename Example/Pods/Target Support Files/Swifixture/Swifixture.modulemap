@@ -1,0 +1,6 @@
+framework module Swifixture {
+  umbrella header "Swifixture-umbrella.h"
+
+  export *
+  module * { export * }
+}
