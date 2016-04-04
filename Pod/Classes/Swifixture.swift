@@ -17,9 +17,7 @@ public enum SwifixtureError: ErrorType{
 }
 struct FixtureLoader {
     
-    static func data(fromfile file:String) throws -> NSData?{
-        let bundle = NSBundle.mainBundle()
-        
+    static func data(fromfile file:String, inBundle bundle:NSBundle) throws -> NSData?{
         guard let path = bundle.pathForResource(file, ofType: "json") else{
             throw SwifixtureError.InvalidPath
         }
@@ -36,18 +34,20 @@ struct FixtureLoader {
 
 public struct Swifixture {
     let filename: String
+    let bundle: NSBundle
     
-    public init(_ name:String){
+    public init(_ name:String, inBundle bundle:NSBundle = NSBundle.mainBundle()){
         filename = name
+        self.bundle = bundle
     }
     
     public func toSwiftyJSON() throws -> JSON?{
-        let data = try FixtureLoader.data(fromfile: self.filename)
+        let data = try FixtureLoader.data(fromfile: self.filename, inBundle:self.bundle)
         return JSON(data: data!)
     }
     
     public func toString() throws -> String?{
-        let data = try FixtureLoader.data(fromfile: self.filename)
+        let data = try FixtureLoader.data(fromfile: self.filename, inBundle:self.bundle)
         return JSON(data: data!).rawString()
     }
     
