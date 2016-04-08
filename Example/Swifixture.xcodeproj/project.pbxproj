@@ -16,6 +16,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9770BF0F2E62A9C61289CA03 /* Pods_Swifixture_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DEA52D47A27163C77B6F57 /* Pods_Swifixture_Example.framework */; };
+		9906ECED1CB8002000FDB4DC /* jsonarray.json in Resources */ = {isa = PBXBuildFile; fileRef = 9906ECEC1CB8002000FDB4DC /* jsonarray.json */; };
 		FEBE0BEF90C108E9C52E96DA /* Pods_Swifixture_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1313FFDAEA79797BF6C77B3F /* Pods_Swifixture_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		607FACE51AFB9204008FA782 /* Swifixture_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swifixture_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		9906ECEC1CB8002000FDB4DC /* jsonarray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonarray.json; sourceTree = "<group>"; };
 		9AAA4615B677AA706B5845A1 /* Pods-Swifixture_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifixture_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swifixture_Example/Pods-Swifixture_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D7DEA52D47A27163C77B6F57 /* Pods_Swifixture_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifixture_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3341964CADB654A1A83CCB2 /* Pods-Swifixture_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifixture_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swifixture_Example/Pods-Swifixture_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				208980891C675FBE004AD94D /* jsonfile.json */,
 				20A2C2041C67AC58006CDC59 /* simple.json */,
+				9906ECEC1CB8002000FDB4DC /* jsonarray.json */,
 			);
 			name = fixtures;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				2089808A1C675FBE004AD94D /* jsonfile.json in Resources */,
 				20A2C2051C67AC58006CDC59 /* simple.json in Resources */,
+				9906ECED1CB8002000FDB4DC /* jsonarray.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

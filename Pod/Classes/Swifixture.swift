@@ -56,4 +56,10 @@ public struct Swifixture {
         let result = Mapper<T>().map(jsonString!)
         return result
     }
+    
+    public func mapToArray<T:Mappable>(type:T.Type) throws -> [T]?{
+        let jsonString = try self.toString()
+        let result = Mapper<T>().mapArray(jsonString!)
+        return result
+    }
 }

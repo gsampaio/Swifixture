@@ -27,6 +27,10 @@ class TableOfContentsSpec: QuickSpec {
                 let json = try! Swifixture("jsonfile").toSwiftyJSON()
                 expect(json!["prop1"]) == "first prop"
             }
+            it("should be able to load jsonarray") {
+                let json = try! Swifixture("jsonarray").mapToArray(FixtureObjectMapper)
+                expect(json!.count) == 2
+            }
             
             it("should be able to map string to obj") {
                 let object = try! Swifixture("jsonfile").mapTo(FixtureObjectMapper)
